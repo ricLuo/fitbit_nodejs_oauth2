@@ -55,7 +55,7 @@ var tfile = 'fb-token.json';
 //
 var fitbit = new Fitbit( config.fitbit );
 
-app.use(session({ secret: config.fitbit, cookie: { maxAge: 60000 }}));
+// app.use(session({ secret: config.fitbit, cookie: { maxAge: 60000 }}));
 
 // In a browser, http://localhost:4000/fitbit to authorize a user for the first time.
 //
