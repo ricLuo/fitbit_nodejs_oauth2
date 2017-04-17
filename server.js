@@ -97,7 +97,7 @@ app.get('/callback', function (req, res, next) {
 //
 
 app.get( '/fb-profile', function( req, res, next ) {
-  var token =
+  // var token =
     fitbit.request({
         uri: "https://api.fitbit.com/1/user/-/profile.json",
         method: 'GET',
@@ -117,6 +117,7 @@ app.get( '/fb-profile', function( req, res, next ) {
             res.send( JSON.stringify( profile, null, 2 ));
             // res.json(profile);
     });
+  });
 
     app.get("/logout", function(req, res) {
         // req.session.authorized = false;
@@ -145,6 +146,6 @@ app.get( '/fb-profile', function( req, res, next ) {
       res.sendFile(path.join(__dirname+'/./public/index.html'));
       // C:\backup\Desktop\Web_Project\MyWebSite\public\js\index_test.html
     });
-});
+
 
 app.listen(8080);
