@@ -79,7 +79,7 @@ app.get('/callback', function (req, res, next) {
         // req.session.access_token = token.access_token;
         // req.session.save();
 
-        res.redirect( 'http://ec2-52-72-72-204.compute-1.amazonaws.com:8080/' );
+        res.redirect( '/' );
         // persist the token
         // persist.write( tfile, token, function( err ) {
         //     if ( err ) return next( err );
